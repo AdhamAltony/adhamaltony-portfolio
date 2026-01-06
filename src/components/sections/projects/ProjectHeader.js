@@ -10,8 +10,11 @@ export default function ProjectHeader({ project }) {
   const hasMedia = Boolean(project.video || project.image);
 
   return (
-    <section className="py-16 sm:py-20" aria-labelledby="project-title">
-      <Container className="space-y-6">
+    <section
+      className="pt-14 pb-10 sm:pt-16 sm:pb-14 lg:pt-20 lg:pb-16"
+      aria-labelledby="project-title"
+    >
+      <Container className="space-y-5 sm:space-y-6">
         <Reveal direction="left">
           <div className="flex flex-wrap items-center gap-3">
             <Badge>{project.category}</Badge>
@@ -79,11 +82,11 @@ export default function ProjectHeader({ project }) {
             )}
           </div>
         </Reveal>
-        <Reveal direction="right" delay={240}>
-          <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-background/40 via-muted/40 to-background/80 shadow-soft">
+        <Reveal direction="up" delay={240}>
+          <div className="relative mx-auto aspect-[16/9] w-full max-w-5xl overflow-hidden rounded-3xl border border-border/60 bg-gradient-to-br from-background/40 via-muted/40 to-background/80 shadow-soft">
             {project.video ? (
               <video
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover object-center"
                 controls
                 autoPlay
                 muted

@@ -1,16 +1,40 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ArrowUpRight } from 'lucide-react';
 import Badge from '../../ui/Badge';
 import Button from '../../ui/Button';
 import Card from '../../ui/Card';
 
 export default function ProjectCard({ project }) {
+  const router = useRouter();
   const { live, repo } = project.links || {};
   const hasLinks = Boolean(live || repo);
+  const caseStudyHref = `/projects/${project.slug}`;
+
+  const handleCardClick = (event) => {
+    if (event.target.closest('a,button')) return;
+    router.push(caseStudyHref);
+  };
+
+  const handleCardKeyDown = (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      router.push(caseStudyHref);
+    }
+  };
 
   return (
-    <Card className="group flex h-full flex-col gap-5">
+    <Card
+      className="group flex h-full cursor-pointer flex-col gap-5 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60"
+      role="link"
+      tabIndex={0}
+      aria-label={`View ${project.title} case study`}
+      onClick={handleCardClick}
+      onKeyDown={handleCardKeyDown}
+    >
       <div className="flex flex-wrap items-center gap-3">
         <Badge className="bg-background/80">{project.category}</Badge>
         <span className="text-xs text-foreground/60">{project.timeline}</span>
@@ -35,13 +59,13 @@ export default function ProjectCard({ project }) {
       <div className="space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <Link
-            href={`/projects/${project.slug}`}
+            href={caseStudyHref}
             className="text-lg font-semibold text-foreground transition duration-300 group-hover:text-accent"
           >
             {project.title}
           </Link>
           <Link
-            href={`/projects/${project.slug}`}
+            href={caseStudyHref}
             className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-foreground/40 transition duration-300 group-hover:text-accent"
           >
             Case study
