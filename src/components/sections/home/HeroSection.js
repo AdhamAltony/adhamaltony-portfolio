@@ -37,9 +37,9 @@ export default function HeroSection() {
       <Container className="grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-start lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
         <Reveal
           direction="left"
-          className="flex flex-col items-center space-y-5 text-center sm:space-y-6"
+          className="mx-auto flex w-full max-w-2xl flex-col items-center space-y-5 text-center sm:space-y-6 lg:mx-0 lg:max-w-none lg:items-start lg:text-left"
         >
-          <div className="flex flex-col items-center gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
+          <div className="flex flex-col items-center gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center sm:gap-3 lg:justify-start">
             <div className="inline-flex items-center gap-2 rounded-full border border-border/60 bg-card/70 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground/70 sm:text-xs">
               {profile.location}
             </div>
@@ -75,7 +75,7 @@ export default function HeroSection() {
               {profile.summary}
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
+          <div className="flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start">
             <Button href="/projects" className="w-full sm:w-auto">
               View Projects <ArrowUpRight className="h-4 w-4" />
             </Button>
@@ -114,14 +114,14 @@ export default function HeroSection() {
               </p>
             </div>
           </div>
-          <div className="flex flex-wrap justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
             {profile.openRoles.map((role) => (
               <Tag key={role} className="shrink-0">
                 {role}
               </Tag>
             ))}
           </div>
-          <div className="hidden flex-wrap items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground/50 sm:flex sm:text-xs">
+          <div className="hidden flex-wrap items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground/50 sm:flex sm:text-xs lg:justify-start">
             <Link href="/#projects" className="hover:text-foreground">
               Featured projects
             </Link>
