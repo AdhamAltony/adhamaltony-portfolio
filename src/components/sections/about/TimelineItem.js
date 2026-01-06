@@ -3,11 +3,7 @@ import Card from '../../ui/Card';
 export default function TimelineItem({ item }) {
   return (
     <li className="relative">
-      <span
-        className="absolute -left-[6px] top-7 h-3 w-3 rounded-full bg-accent shadow-[0_0_0_6px_rgba(249,115,22,0.12)]"
-        aria-hidden="true"
-      />
-      <Card className="space-y-3">
+      <Card className="mx-auto w-full max-w-xl space-y-3 sm:mx-0 sm:max-w-none">
         <div className="space-y-1">
           <h3 className="text-lg font-semibold">{item.title}</h3>
           <p className="text-sm text-foreground/70">{item.summary}</p>

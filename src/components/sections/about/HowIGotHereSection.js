@@ -18,10 +18,10 @@ export default function HowIGotHereSection() {
           />
         </Reveal>
         <div className="grid gap-8 lg:grid-cols-[2.3fr_1fr] lg:items-start">
-          <div className="order-2 lg:order-1">
+          <div>
             <Timeline items={howIGotHere.chapters} />
           </div>
-          <div className="order-1 lg:order-2">
+          <div>
             <KeyWinsCard wins={howIGotHere.keyWins} />
           </div>
         </div>

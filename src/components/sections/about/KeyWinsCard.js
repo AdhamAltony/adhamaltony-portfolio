@@ -3,7 +3,7 @@ import Chip from '../../ui/Chip';
 
 export default function KeyWinsCard({ wins }) {
   return (
-    <Card className="space-y-4 lg:sticky lg:top-24">
+    <Card className="mx-auto w-full max-w-xl space-y-4 text-center sm:text-left lg:mx-0 lg:max-w-none lg:sticky lg:top-24">
       <div>
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-foreground/50">
           Key Wins

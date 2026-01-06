@@ -4,7 +4,7 @@ import TimelineItem from './TimelineItem';
 export default function Timeline({ items }) {
   return (
     <ol
-      className="relative space-y-6 border-l border-border/60 pl-6 sm:pl-8"
+      className="relative space-y-6 sm:border-l sm:border-border/60 sm:pl-8"
       aria-label="How I got here timeline"
     >
       {items.map((item, index) => (
