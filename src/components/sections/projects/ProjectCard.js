@@ -21,22 +21,16 @@ export default function ProjectCard({ project }) {
             className="object-cover object-center transition duration-300 group-hover:scale-[1.03]"
           />
         ) : null}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(249,115,22,0.35),transparent_60%)] opacity-70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+        {!project.image ? (
+          <>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(249,115,22,0.35),transparent_60%)] opacity-70" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+          </>
+        ) : null}
         <div className="relative z-10 flex h-full flex-col justify-between p-4">
           <div className="flex flex-wrap items-center gap-3">
             <Badge className="bg-background/80">{project.category}</Badge>
             <span className="text-xs text-foreground/60">{project.timeline}</span>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {project.tags.slice(0, 2).map((tag) => (
-              <span
-                key={tag}
-                className="rounded-full border border-border/60 bg-background/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground/60"
-              >
-                {tag}
-              </span>
-            ))}
           </div>
         </div>
       </div>
@@ -57,6 +51,16 @@ export default function ProjectCard({ project }) {
           </Link>
         </div>
         <p className="text-sm text-foreground/70">{project.shortDescription}</p>
+        <div className="flex flex-wrap gap-2">
+          {project.tags.slice(0, 2).map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-foreground/20 bg-foreground/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-background shadow-sm"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
       <div className="text-sm text-foreground/70">
         <p className="font-semibold text-foreground">Role</p>

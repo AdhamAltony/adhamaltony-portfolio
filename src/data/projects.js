@@ -248,6 +248,23 @@ export const projects = [
     timeline: '2025',
     category: 'AI/ML',
     tags: ['NLP', 'Classification', 'Data Science'],
+    image: asset(
+      '/Movie genre classifier/Screen Shot 2026-01-06 at 1.14.55 PM.png'
+    ),
+    gallery: [
+      {
+        src: asset(
+          '/Movie genre classifier/Screen Shot 2026-01-06 at 1.14.55 PM.png'
+        ),
+        alt: 'Movie genre classifier demo view',
+      },
+      {
+        src: asset(
+          '/Movie genre classifier/2025-07-31_screenshot_2025-07-31_screenshot_Screen_Shot_2025-07-31_at_10.45.55_PM.png'
+        ),
+        alt: 'Movie genre classifier prediction screen',
+      },
+    ],
     stack: [
       'Python',
       'Pandas',

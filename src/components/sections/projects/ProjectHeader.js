@@ -28,7 +28,12 @@ export default function ProjectHeader({ project }) {
             </p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
-                <Tag key={tag}>{tag}</Tag>
+                <Tag
+                  key={tag}
+                  className="border-foreground/20 bg-foreground/90 text-background hover:border-foreground/40 hover:bg-foreground hover:text-background"
+                >
+                  {tag}
+                </Tag>
               ))}
             </div>
           </div>
@@ -98,7 +103,9 @@ export default function ProjectHeader({ project }) {
                 className="object-cover object-center"
               />
             ) : null}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/25 via-transparent to-transparent" />
+            {!hasMedia ? (
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/25 via-transparent to-transparent" />
+            ) : null}
             {!hasMedia ? (
               <div className="absolute inset-0 flex flex-col justify-between p-6">
                 <div className="text-xs font-semibold uppercase tracking-[0.3em] text-foreground/50">
