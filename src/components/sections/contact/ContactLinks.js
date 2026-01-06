@@ -29,7 +29,7 @@ export default function ContactLinks() {
 
   return (
     <Reveal direction="right" delay={80}>
-      <Card className="mx-auto w-full max-w-xl space-y-6 text-center sm:text-left md:mx-0">
+      <Card className="mx-auto w-[92%] max-w-xl space-y-6 text-center sm:w-full sm:text-left md:mx-0">
         <div className="space-y-2">
           <h2 className="text-2xl font-semibold">Contact details</h2>
           <p className="text-sm text-foreground/70">

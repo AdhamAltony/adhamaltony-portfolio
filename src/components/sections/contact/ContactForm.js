@@ -35,14 +35,14 @@ export default function ContactForm() {
 
   return (
     <Reveal direction="left" delay={60}>
-      <Card className="mx-auto w-full max-w-xl space-y-6 text-center sm:text-left md:mx-0">
+      <Card className="mx-auto w-[92%] max-w-xl space-y-6 text-center sm:w-full sm:text-left md:mx-0">
         <div className="space-y-2">
           <h2 className="text-2xl font-semibold">Let us build something together</h2>
           <p className="text-sm text-foreground/70">
             This form opens your email client with the details pre-filled.
           </p>
         </div>
-        <form onSubmit={handleSubmit} className="space-y-4 text-left">
+        <form onSubmit={handleSubmit} className="space-y-4 text-center sm:text-left">
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-medium">
