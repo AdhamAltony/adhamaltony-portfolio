@@ -22,10 +22,11 @@ export default function ContactPage() {
             title="Contact"
             titleId="contact-title"
             titleAs="h1"
+            align="center"
             subtitle="Reach out for AI product roles, full-stack builds, or collaborations."
           />
         </Reveal>
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 md:items-start">
           <ContactForm />
           <ContactLinks />
         </div>

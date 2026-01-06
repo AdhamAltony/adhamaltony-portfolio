@@ -29,16 +29,16 @@ export default function ContactLinks() {
 
   return (
     <Reveal direction="right" delay={80}>
-      <Card className="space-y-6">
-        <div>
+      <Card className="mx-auto w-full max-w-xl space-y-6 text-center sm:text-left md:mx-0">
+        <div className="space-y-2">
           <h2 className="text-2xl font-semibold">Contact details</h2>
-          <p className="mt-2 text-sm text-foreground/70">
+          <p className="text-sm text-foreground/70">
             Reach out directly or connect via LinkedIn and GitHub.
           </p>
         </div>
         <div className="grid gap-4 text-sm text-foreground/80 sm:grid-cols-2">
-          <div className="flex items-start gap-3 rounded-2xl border border-border/80 bg-background/80 p-4 transition duration-300 hover:border-accent/60 hover:bg-card/90">
-            <span className="mt-0.5 rounded-full bg-accent/15 p-2 text-accent">
+          <div className="flex flex-col items-center gap-3 rounded-2xl border border-border/80 bg-background/80 p-4 text-center transition duration-300 hover:border-accent/60 hover:bg-card/90 sm:flex-row sm:items-start sm:text-left">
+            <span className="rounded-full bg-accent/15 p-2 text-accent sm:mt-0.5">
               <Mail className="h-4 w-4" />
             </span>
             <div>
@@ -49,8 +49,8 @@ export default function ContactLinks() {
               </p>
             </div>
           </div>
-          <div className="flex items-start gap-3 rounded-2xl border border-border/80 bg-background/80 p-4 transition duration-300 hover:border-accent/60 hover:bg-card/90">
-            <span className="mt-0.5 rounded-full bg-accent/15 p-2 text-accent">
+          <div className="flex flex-col items-center gap-3 rounded-2xl border border-border/80 bg-background/80 p-4 text-center transition duration-300 hover:border-accent/60 hover:bg-card/90 sm:flex-row sm:items-start sm:text-left">
+            <span className="rounded-full bg-accent/15 p-2 text-accent sm:mt-0.5">
               <MapPin className="h-4 w-4" />
             </span>
             <div>
@@ -60,13 +60,13 @@ export default function ContactLinks() {
           </div>
         </div>
         <div className="grid gap-3 sm:grid-cols-2">
-          <Button href={`mailto:${profile.email}`} variant="outline">
+          <Button href={`mailto:${profile.email}`} variant="outline" className="w-full">
             Mailto
           </Button>
-          <Button onClick={handleCopy} variant="outline">
+          <Button onClick={handleCopy} variant="outline" className="w-full">
             {copied ? 'Copied' : 'Copy email'}
           </Button>
-          <Button href={profile.resumeUrl} variant="outline" download>
+          <Button href={profile.resumeUrl} variant="outline" download className="w-full">
             Download CV
           </Button>
         </div>
@@ -74,6 +74,7 @@ export default function ContactLinks() {
           <Button
             href={profile.socials.find((s) => s.label === 'LinkedIn')?.href}
             variant="ghost"
+            className="w-full"
           >
             <Linkedin className="h-4 w-4" />
             LinkedIn
@@ -81,6 +82,7 @@ export default function ContactLinks() {
           <Button
             href={profile.socials.find((s) => s.label === 'GitHub')?.href}
             variant="ghost"
+            className="w-full"
           >
             <Github className="h-4 w-4" />
             GitHub

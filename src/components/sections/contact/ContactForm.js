@@ -35,14 +35,14 @@ export default function ContactForm() {
 
   return (
     <Reveal direction="left" delay={60}>
-      <Card className="space-y-6">
-        <div>
+      <Card className="mx-auto w-full max-w-xl space-y-6 text-center sm:text-left md:mx-0">
+        <div className="space-y-2">
           <h2 className="text-2xl font-semibold">Let us build something together</h2>
-          <p className="mt-2 text-sm text-foreground/70">
+          <p className="text-sm text-foreground/70">
             This form opens your email client with the details pre-filled.
           </p>
         </div>
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4 text-left">
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm font-medium">
@@ -87,9 +87,14 @@ export default function ContactForm() {
               placeholder="Tell me about the role, the product, and the outcomes you're aiming for."
             />
           </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <Button type="submit">Open email draft</Button>
-            <span className="text-xs text-foreground/60" aria-live="polite">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">
+            <Button type="submit" className="w-full sm:w-auto">
+              Open email draft
+            </Button>
+            <span
+              className="text-center text-xs text-foreground/60 sm:text-left"
+              aria-live="polite"
+            >
               {status === 'sent'
                 ? 'Email draft opened in your client.'
                 : 'No backend required.'}

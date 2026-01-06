@@ -11,6 +11,10 @@ export default function ProjectCard({ project }) {
 
   return (
     <Card className="group flex h-full flex-col gap-5">
+      <div className="flex flex-wrap items-center gap-3">
+        <Badge className="bg-background/80">{project.category}</Badge>
+        <span className="text-xs text-foreground/60">{project.timeline}</span>
+      </div>
       <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-border/60 bg-gradient-to-br from-background/40 via-muted/50 to-background/80">
         {project.image ? (
           <Image
@@ -27,12 +31,6 @@ export default function ProjectCard({ project }) {
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
           </>
         ) : null}
-        <div className="relative z-10 flex h-full flex-col justify-between p-4">
-          <div className="flex flex-wrap items-center gap-3">
-            <Badge className="bg-background/80">{project.category}</Badge>
-            <span className="text-xs text-foreground/60">{project.timeline}</span>
-          </div>
-        </div>
       </div>
       <div className="space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
