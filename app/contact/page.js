@@ -26,7 +26,7 @@ export default function ContactPage() {
             subtitle="Reach out for AI product roles, full-stack builds, or collaborations."
           />
         </Reveal>
-        <div className="grid gap-6 justify-items-center md:grid-cols-2 md:items-start md:justify-items-stretch">
+        <div className="grid w-full gap-6 justify-items-center md:grid-cols-2 md:items-start md:justify-items-stretch">
           <ContactForm />
           <ContactLinks />
         </div>
