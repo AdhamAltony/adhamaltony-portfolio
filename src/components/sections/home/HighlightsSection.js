@@ -16,7 +16,7 @@ export default function HighlightsSection() {
             eyebrow="Highlights"
             title="Impact snapshot"
             titleId="highlights-title"
-            subtitle="A quick look at experience, focus areas, and delivery style."
+            subtitle="A quick look at idea-to-launch delivery, focus areas, and outcomes."
           />
         </Reveal>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

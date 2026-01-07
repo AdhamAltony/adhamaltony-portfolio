@@ -37,7 +37,7 @@ export default function ContactLinks() {
         <div className="space-y-2">
           <h2 className="text-2xl font-semibold">Contact details</h2>
           <p className="text-sm text-foreground/70">
-            Reach out directly or connect via LinkedIn and GitHub.
+            Reach out directly to discuss your idea, scope, and timeline.
           </p>
         </div>
         <div className="grid gap-4 text-sm text-foreground/80 sm:grid-cols-2">

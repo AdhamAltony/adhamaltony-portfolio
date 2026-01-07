@@ -48,8 +48,8 @@ export default function HeroSection() {
                 <span className="absolute inline-flex h-full w-full rounded-full bg-accent/60 opacity-60 motion-safe:animate-ping" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
               </span>
-              <span className="sm:hidden">Open to roles</span>
-              <span className="hidden sm:inline">Open to impact-driven roles</span>
+              <span className="sm:hidden">Open to builds</span>
+              <span className="hidden sm:inline">Open to product builds and roles</span>
             </div>
           </div>
           <ProfileImage className="mx-auto lg:hidden" />

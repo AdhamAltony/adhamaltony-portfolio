@@ -75,8 +75,8 @@
 /** @type {Profile} */
 export const profile = {
   name: 'Adham Ahmed Altony',
-  title: 'AI Product Engineer | Full-Stack Developer (Next.js, React, AWS)',
-  branding: 'Building RAG & AI-powered web apps',
+  title: 'Product Engineer | Full-Stack + AI | Deployment',
+  branding: 'You handle the business. I handle the engine behind it.',
   location: 'El Sherouk, Cairo, Egypt',
   email: 'adham.a.altony@gmail.com',
   emailAlt: 'Adham.A.Altony@gmail.com',
@@ -87,31 +87,31 @@ export const profile = {
   profileImageAlt: 'Adham Ahmed Altony portrait',
   profileImagePosition: '50% 45%',
   summary:
-    'AI Product Engineer and full-stack developer building RAG-ready web apps with Next.js, AWS, and clean UX. 6+ years crafting production web experiences across frontend, backend, and data workflows.',
+    'Product engineer turning rough ideas into shipped full-stack applications. I handle UX, APIs, AI features when they add value, and deployment with cost-aware infrastructure so you can focus on customers and growth.',
   story: [
-    "I am Adham Ahmed Altony, an AI Product Engineer & Full-Stack Developer based in El Sherouk, Cairo. I build scalable web applications and AI-powered systems using Next.js (App Router), React, Node.js, and modern deployment workflows with AWS and Docker.",
-    "My journey started with self-learning and hands-on building, which evolved into real projects and client work. I am currently a Frontend Web Developer Intern at the Digital Egypt Pioneers Initiative (DEPI) and a Freelance Web Developer through ITIDA Gigs, where I sharpen my ability to deliver under deadlines and collaborate in real environments. I have also integrated payments at scale using Stripe, Al Rajhi ARP, and Hyperpay on large projects.",
-    "On the AI side, I trained at the National Telecommunication Institute (NTI), where I worked on practical machine learning projects, including a Movie Genre Classifier that reached 93% accuracy. I led the project's data preprocessing and presentation. I am especially interested in AI products, RAG systems, and cloud architectures, and I like building solutions that balance performance, usability, and clean UX.",
-    "Recently, I built SehaTalk, a bilingual medical consultation platform designed for the Egyptian market, featuring RTL/LTR support, dashboards for different roles, and an SEO-focused experience. I am currently open to roles as a Software Engineer, AI Engineer, Web Developer, or Frontend Developer, especially where I can build impactful products with strong engineering standards.",
+    "I am Adham Ahmed Altony, a Product Engineer based in El Sherouk, Cairo. I take ideas from concept to production using Next.js (App Router), React, Node.js, and modern deployment workflows with AWS and Docker.",
+    "My journey started with self-learning and hands-on building, which evolved into client delivery. I am currently a Frontend Web Developer Intern at the Digital Egypt Pioneers Initiative (DEPI) and a Freelance Web Developer through ITIDA Gigs, where I deliver end-to-end builds under deadlines and collaborate in real environments. I have also integrated payments at scale using Stripe, Al Rajhi ARP, and Hyperpay on large projects.",
+    "On the AI side, I trained at the National Telecommunication Institute (NTI), where I worked on practical machine learning projects, including a Movie Genre Classifier that reached 93% accuracy. I integrate AI only when it improves outcomes, focusing on performance, usability, and clean UX.",
+    "Recently, I built SehaTalk, a bilingual medical consultation platform designed for the Egyptian market, featuring RTL/LTR support, dashboards for different roles, and an SEO-focused experience. I am currently open to Product Engineer, Full-Stack Engineer, or Founding Engineer roles where I can own the idea-to-launch pipeline.",
   ],
   focusAreas: [
-    'Building Next.js full-stack apps with clean architecture and strong UI/UX',
-    'Designing AI-powered features (RAG, NLP pipelines, ML integration) in real products',
-    'Deploying with AWS + Docker and creating reliable, production-ready workflows',
-    'Writing maintainable, modular code and shipping fast without sacrificing quality',
+    'Turning raw ideas into scoped products, roadmaps, and MVPs',
+    'Building full-stack apps end to end with strong UX and reliable APIs',
+    'Adding AI features when they improve outcomes (RAG, NLP, automation)',
+    'Deploying and optimizing costs with AWS + Docker and production-ready workflows',
   ],
   focusHighlights: [
-    'Next.js full-stack, clean architecture',
-    'AI features: RAG, NLP, ML',
-    'AWS + Docker deployments',
-    'Modular code, fast shipping',
+    'Idea to launch delivery',
+    'Full-stack + product UX',
+    'AI when it adds value',
+    'Deployments + cost control',
   ],
-  focusSummary: 'Full-stack product builder.',
+  focusSummary: 'You handle the business. I handle the engine behind it.',
   openRoles: [
-    'Software Engineer',
+    'Product Engineer',
+    'Full-Stack Engineer',
     'AI Engineer',
-    'Web Developer',
-    'Frontend Developer',
+    'Founding Engineer',
   ],
   techStackLine:
     'Next.js, React, JavaScript, Tailwind, Node.js/Express, MongoDB/PostgreSQL, REST APIs, Auth/RBAC, AWS, Docker, Python, Scikit-learn, Streamlit.',
@@ -145,23 +145,23 @@ export const profile = {
   highlights: [
     {
       label: 'Experience',
-      value: '6+ years',
-      description: 'Building full-stack web products and shipping to production.',
+      value: '4+ years',
+      description: 'Shipping full-stack products from idea to launch.',
     },
     {
-      label: 'Focus',
-      value: 'AI + RAG',
-      description: 'Designing retrieval-augmented workflows and AI-first UX.',
+      label: 'Delivery',
+      value: 'Idea to launch',
+      description: 'Scope, build, and deploy complete applications.',
     },
     {
       label: 'Stack',
-      value: 'Next.js + AWS',
-      description: 'App Router, React, cloud services, and secure APIs.',
+      value: 'Full-stack + AI',
+      description: 'Next.js, APIs, data, and AI when it adds value.',
     },
     {
-      label: 'Location',
-      value: 'Cairo, Egypt',
-      description: 'Open to remote or hybrid roles worldwide.',
+      label: 'Deployment',
+      value: 'AWS + Docker',
+      description: 'Cost-aware infrastructure and production readiness.',
     },
   ],
   experience: [
@@ -256,33 +256,34 @@ export const howIGotHere = {
     {
       title: 'Foundations',
       summary:
-        "I'm Adham Ahmed Altony, an AI Product Engineer & Full-Stack Developer based in El Sherouk, Cairo, Egypt, and I studied Computer Science and Engineering. I build with Next.js (App Router), React, Node.js, AWS, and Docker.",
+        "I'm Adham Ahmed Altony, a Product Engineer based in El Sherouk, Cairo, Egypt, and I studied Computer Science and Engineering. I build with Next.js (App Router), React, Node.js, AWS, and Docker.",
       bullets: [
-        'I build scalable web systems with clean UX.',
-        'I prioritize production-ready architecture and performance.',
+        'I take ideas from concept to production.',
+        'I prioritize product outcomes, UX, and cost-aware architecture.',
       ],
     },
     {
       title: 'Client Delivery',
       summary:
-        'I started freelancing in 2024 and currently work with clients worldwide.',
+        'I started freelancing in 2024 and deliver end-to-end builds for clients worldwide.',
       bullets: [
-        'I contributed to 6+ client projects across UI, features, and API integration.',
+        'I contributed to 6+ client projects across UX, features, API integration, and deployment.',
         'I implemented payment flows on 3 platforms: Stripe, Al Rajhi ARP, Hyperpay.',
       ],
     },
     {
       title: 'AI Track',
       summary:
-        'I built the Movie Genre Classifier to 93% accuracy on 5,000+ records and led delivery.',
+        'I built the Movie Genre Classifier to 93% accuracy on 5,000+ records and learned to integrate AI responsibly.',
       bullets: [
         'I owned data preprocessing and the feature pipeline.',
-        'I led the presentation and project delivery.',
+        'I focus on using AI only when it improves product outcomes.',
       ],
     },
     {
       title: 'Recent Builds',
-      summary: 'I shipped product-ready builds including SehaTalk and PDFSwifter.',
+      summary:
+        'I shipped product-ready builds including SehaTalk and PDFSwifter, owning the full lifecycle.',
       bullets: [
         'SehaTalk: I built a bilingual RTL/LTR experience with multi-role dashboards.',
         'PDFSwifter: I shipped a document automation app with fast, clean workflows.',

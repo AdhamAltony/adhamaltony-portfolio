@@ -14,7 +14,7 @@ export default function ExperienceSection() {
             eyebrow="Timeline"
             title="Milestones"
             titleId="experience-title"
-            subtitle="Complete, chronological milestones across education, client delivery, and AI product work."
+            subtitle="Complete, chronological milestones across education, client delivery, and product builds."
           />
         </Reveal>
         <div className="grid gap-10 lg:grid-cols-[1.25fr_0.75fr]">

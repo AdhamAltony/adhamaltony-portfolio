@@ -41,7 +41,7 @@ export default function ContactForm() {
     >
       <Card className="w-full space-y-6 text-center sm:text-left">
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold">Let us build something together</h2>
+          <h2 className="text-2xl font-semibold">Let us build your product</h2>
           <p className="text-sm text-foreground/70">
             This form opens your email client with the details pre-filled.
           </p>
@@ -88,7 +88,7 @@ export default function ContactForm() {
               value={form.message}
               onChange={handleChange}
               className="w-full rounded-xl border border-border bg-background px-4 py-2 text-sm transition duration-300 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
-              placeholder="Tell me about the role, the product, and the outcomes you're aiming for."
+              placeholder="Tell me about the idea, business goals, and timeline."
             />
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 sm:justify-start">

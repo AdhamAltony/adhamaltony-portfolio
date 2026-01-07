@@ -14,7 +14,7 @@ export default function HowIGotHereSection() {
             eyebrow="How I got here"
             title="A focused, chronological story"
             titleId="how-i-got-here-title"
-            subtitle="Built around shipped work, measurable impact, and product outcomes."
+            subtitle="Built around end-to-end delivery, measurable impact, and product outcomes."
           />
         </Reveal>
         <div className="grid gap-8 lg:grid-cols-[2.3fr_1fr] lg:items-start">

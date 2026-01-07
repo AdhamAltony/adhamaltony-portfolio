@@ -23,7 +23,7 @@ export default function AboutStorySection() {
             eyebrow="Journey"
             title="How I got here"
             titleId="about-story-title"
-            subtitle="A chronological view of the chapters that shaped my work as a full-stack product builder."
+            subtitle="A chronological view of the chapters that shaped my work as an end-to-end product engineer."
           />
         </Reveal>
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">

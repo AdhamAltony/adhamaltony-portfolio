@@ -25,7 +25,7 @@ export default function ProjectsGrid({ projects }) {
             title="Projects"
             titleId="projects-title"
             titleAs="h1"
-            subtitle="Case studies that highlight AI product engineering, full-stack delivery, and practical outcomes."
+            subtitle="Case studies that highlight idea-to-launch delivery, full-stack builds, and business outcomes."
             actions={
               <div className="text-sm text-foreground/50">
                 {visibleProjects.length} results

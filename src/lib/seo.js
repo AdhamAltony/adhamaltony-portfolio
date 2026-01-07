@@ -51,13 +51,15 @@ export function buildMetadata({ title, description, pathname, image } = {}) {
       images: [ogImage],
     },
     keywords: [
-      'AI product engineer',
-      'Full-stack developer',
-      'Next.js portfolio',
-      'RAG systems',
+      'product engineer',
+      'full-stack product development',
+      'idea to launch',
+      'MVP build',
+      'AI integration',
+      'deployment',
+      'Next.js',
       'AWS',
       'React',
-      'JavaScript',
     ],
   };
 }

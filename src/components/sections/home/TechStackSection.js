@@ -27,7 +27,7 @@ export default function TechStackSection() {
             eyebrow="Toolkit"
             title="Tech stack"
             titleId="tech-stack-title"
-            subtitle="Tools I use to ship AI-powered web products end to end."
+            subtitle="Tools I use to scope, build, and deploy full-stack products with AI when it adds value."
           />
         </Reveal>
         <div className="mt-8 grid gap-6 sm:grid-cols-2">

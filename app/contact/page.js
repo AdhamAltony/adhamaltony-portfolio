@@ -8,7 +8,7 @@ import { buildMetadata } from '../../src/lib/seo';
 export const metadata = buildMetadata({
   title: 'Contact',
   description:
-    'Contact Adham Ahmed Altony for AI product engineering, Next.js, and full-stack roles.',
+    'Contact Adham Ahmed Altony to turn ideas into shipped products with AI and deployment handled.',
   pathname: '/contact',
 });
 
@@ -23,7 +23,7 @@ export default function ContactPage() {
             titleId="contact-title"
             titleAs="h1"
             align="center"
-            subtitle="Reach out for AI product roles, full-stack builds, or collaborations."
+            subtitle="Reach out to scope your idea, build the product, and ship it end to end."
           />
         </Reveal>
         <div className="grid w-full gap-6 justify-items-center md:grid-cols-2 md:items-start md:justify-items-stretch">

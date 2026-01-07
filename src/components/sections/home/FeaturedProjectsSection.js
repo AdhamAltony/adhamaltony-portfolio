@@ -20,7 +20,7 @@ export default function FeaturedProjectsSection() {
             eyebrow="Case Studies"
             title="Featured projects"
             titleId="featured-projects-title"
-            subtitle="Case studies focused on AI product engineering and full-stack delivery."
+            subtitle="Case studies focused on idea-to-launch delivery and full-stack outcomes."
             actions={
               <Link
                 href="/projects"

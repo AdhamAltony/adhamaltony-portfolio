@@ -6,7 +6,7 @@ import { getAllProjects } from '../../src/lib/utils';
 export const metadata = buildMetadata({
   title: 'Projects',
   description:
-    'Explore AI product engineering and full-stack projects with outcomes, stacks, and live demos.',
+    'Explore idea-to-launch full-stack projects with outcomes, AI-ready features, and live demos.',
   pathname: '/projects',
 });
 
