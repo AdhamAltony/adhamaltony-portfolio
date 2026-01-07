@@ -8,10 +8,6 @@ import Reveal from '../../ui/Reveal';
 import SectionHeader from '../../ui/SectionHeader';
 
 export default function ProjectGallery({ project }) {
-  if (!project.gallery || project.gallery.length === 0) {
-    return null;
-  }
-
   const [activeIndex, setActiveIndex] = useState(null);
   const activeItem =
     typeof activeIndex === 'number' ? project.gallery[activeIndex] : null;
@@ -34,6 +30,10 @@ export default function ProjectGallery({ project }) {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [activeIndex]);
+
+  if (!project.gallery || project.gallery.length === 0) {
+    return null;
+  }
 
   const titleId = `${project.slug}-gallery-title`;
 
